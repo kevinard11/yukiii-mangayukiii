@@ -31,6 +31,5 @@ make run-local
 ### Run Docker (Local)
 
 ```shell
-make compile
 make stack-up
 ```
