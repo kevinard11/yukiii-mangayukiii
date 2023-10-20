@@ -9,3 +9,14 @@ services:
     environment:
       JAVA_OPTS: -DXmxlg
       SPRING_PROFILES_ACTIVE: dev
+    depends_on:
+      - postgres
+
+  postgres:
+    image: postgres
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: mangayukiii
+      POSTGRES_USER: mangayukiii
+      POSTGRES_PASSWORD: mangayukiii

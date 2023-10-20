@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost/mangayukiii
+    driverClassName: org.postgresql.Driver
+    username: mangayukiii
+    password: mangayukiii
