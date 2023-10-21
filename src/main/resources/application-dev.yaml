@@ -1,13 +1,13 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost/mangayukiii
+    url: jdbc:postgresql://postgres/mangayukiii
     driverClassName: org.postgresql.Driver
     username: mangayukiii
     password: mangayukiii
 
 logging:
-  level:
-    root: DEBUG
+#  level:
+#    root: DEBUG
 
     org:
       hibernate:
