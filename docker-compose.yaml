@@ -2,6 +2,7 @@ version: "3.3"
 services:
 
   mangayukiii-spr:
+    image: 'sh1rayuk1/mangayukiii-spr:latest'
     build:
       context: .
     ports:

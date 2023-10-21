@@ -32,7 +32,7 @@ public class DemoAuthenticationFilter extends OncePerRequestFilter {
 
     String tokenHeader = request.getHeader(AppConstant.HEADER_SECURITY_API_AUTHORIZATION);
     String apiSecretHeader = request.getHeader(AppConstant.HEADER_SECURITY_API_SECRET);
-    
+
     if (apiSecretHeader != null){
 
       SecurityContextHolder

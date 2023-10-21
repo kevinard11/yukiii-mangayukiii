@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>yukiii</groupId>
-	<artifactId>mangayukiii</artifactId>
+	<artifactId>mangayukiii-spr</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>mangayukiii</name>
 	<description>Backend for manga yukiii</description>
