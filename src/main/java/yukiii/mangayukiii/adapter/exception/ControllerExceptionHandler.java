@@ -1,4 +1,4 @@
-package yukiii.mangayukiii.config;
+package yukiii.mangayukiii.adapter.exception;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpHeaders;
@@ -12,8 +12,8 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.method.annotation.MethodArgumentTypeMismatchException;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
-import yukiii.mangayukiii.config.exception.BadRequestException;
 import yukiii.mangayukiii.constant.ErrorResponse;
+import yukiii.mangayukiii.constant.exception.BadRequestException;
 import yukiii.mangayukiii.dto.common.response.ResponseErrorTemplate;
 
 import java.io.PrintWriter;
