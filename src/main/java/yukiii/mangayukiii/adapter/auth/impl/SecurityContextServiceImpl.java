@@ -27,7 +27,6 @@ public class SecurityContextServiceImpl implements SecurityContextService {
   public AbstractAuthenticationToken decodeApiSecret(String key) {
     AbstractAuthenticationToken userToken = null;
 
-    log.info(key);
     if (StringUtils.hasText(key) && key.equals(internalKey)){
 
       userToken = new RunAsUserToken(
