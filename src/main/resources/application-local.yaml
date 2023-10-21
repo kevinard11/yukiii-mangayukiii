@@ -20,3 +20,9 @@ logging:
         web:
           client:
             RestTemplate: DEBUG
+
+setting:
+  service:
+    internal:
+      name: mangayukiii-spr
+      key: yukiii

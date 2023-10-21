@@ -5,10 +5,7 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import yukiii.mangayukiii.dto.comic.response.ComicResponseReadDto;
 import yukiii.mangayukiii.dto.common.request.PagingRequestMeta;
 import yukiii.mangayukiii.dto.common.response.ResponsePagination;
@@ -31,6 +28,7 @@ public class ComicController {
   @RequestMapping(method = RequestMethod.GET)
   @Operation(summary = "Comic", operationId = "comic")
   public ResponseSuccessTemplate<List<ComicResponseReadDto>> getAllComics(
+    @RequestHeader(name = "api-secret", required = false) String apiSecret,
     @RequestParam(name = "search_key", required = false) String searchKey,
     @RequestParam(name = "page", defaultValue = "1", required = false) int page,
     @RequestParam(name = "size", defaultValue = "10", required = false) int size

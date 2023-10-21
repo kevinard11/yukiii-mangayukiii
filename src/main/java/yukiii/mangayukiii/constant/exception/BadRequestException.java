@@ -1,4 +1,4 @@
-package yukiii.mangayukiii.config.exception;
+package yukiii.mangayukiii.constant.exception;
 
 import yukiii.mangayukiii.constant.ErrorResponse;
 
