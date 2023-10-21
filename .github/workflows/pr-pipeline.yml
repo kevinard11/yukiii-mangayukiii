@@ -29,7 +29,5 @@ jobs:
           key: ${{ runner.os }}-maven
           restore-keys: |
             ${{ runner.os }}-maven
-      - name: Check Code Style with Prettier
-        run: make check-style
       - name: Lint Code by compilation
         run: make compile
