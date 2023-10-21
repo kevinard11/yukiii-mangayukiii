@@ -4,3 +4,19 @@ spring:
     driverClassName: org.postgresql.Driver
     username: mangayukiii
     password: mangayukiii
+
+logging:
+  level:
+    root: DEBUG
+
+    org:
+      hibernate:
+        SQL: debug
+        type:
+          descriptor:
+            sql: trace
+
+      springframework:
+        web:
+          client:
+            RestTemplate: DEBUG
