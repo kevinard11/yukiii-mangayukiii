@@ -13,3 +13,7 @@ spring:
     driverClassName: org.postgresql.Driver
     username: ${SPRING_DATASOURCE_USERNAME}
     password: ${SPRING_DATASOURCE_PASSWORD}
+
+logging:
+  pattern:
+    console: '%d{dd-MM-yyyy HH:mm:ss.SSS} [%-5level] [%-25thread] [%-36X{correlationId}] [%C{0}@%L]: %msg%n'
