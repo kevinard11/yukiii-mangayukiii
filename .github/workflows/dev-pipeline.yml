@@ -12,7 +12,7 @@ jobs:
   push_image:
     name: Compile code
     runs-on: ubuntu-latest
-      steps:
+    steps:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 1
