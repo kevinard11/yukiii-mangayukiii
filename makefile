@@ -20,3 +20,9 @@ run-local:
 stack-up: compile
 	docker-compose build mangayukiii-spr
 	docker-compose up -d
+
+image: compile
+	docker build -t $(IMAGE_NAME):$(IMAGE_TAG) .
+
+push-docker: image
+	 docker push $(IMAGE_NAME):$(IMAGE_TAG)
