@@ -1,4 +1,4 @@
-IMAGE_NAME ?= yukiii/mangayukiii-spr
+IMAGE_NAME ?= sh1rayuk1/mangayukiii-spr
 IMAGE_TAG ?= latest
 .DEFAULT_GOAL := default
 
