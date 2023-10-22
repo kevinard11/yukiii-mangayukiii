@@ -10,7 +10,7 @@ env:
   SERVICE_NAME: mangayukiii
 jobs:
   push_image:
-    name: Compile code
+    name: Push image to docker hub
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
