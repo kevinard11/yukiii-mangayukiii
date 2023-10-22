@@ -10,7 +10,7 @@ env:
   SERVICE_NAME: mangayukiii
 jobs:
   push_image:
-    name: Push image 
+    name: Push image
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -48,6 +48,8 @@ jobs:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "mangayukiii-spr"
           heroku_email: "drlobsterard@gmail.com"
+          usedocker: true
+          branch: "dev"
 
 #  deploy-heroku:
 #    needs: push_image
@@ -80,3 +82,4 @@ jobs:
 #          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
 #          heroku_app_name: "mangayukiii-spr"
 #          heroku_email: "drlobsterard@gmail.com"
+#          branch: "dev"
